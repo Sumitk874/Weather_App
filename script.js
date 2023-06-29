@@ -7,7 +7,7 @@ const weatherIcon = document.querySelector(".weather-icon")
 
 
 async function checkWeather(city){
-    const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+    const response = await fetch(apiUrl + city.trim() + `&appid=${apiKey}`);
 
     if(response.status == 404){
         document.querySelector(".error").style.display = "block";
@@ -46,13 +46,13 @@ async function checkWeather(city){
 
 
 searchBtn.addEventListener("click", ()=>{
-    checkWeather(searchBox.value);
+    checkWeather(searchBox.value.trim());
 });
 
 searchBox.addEventListener("keyup", function(event) {
     // Check if the Enter key was pressed
     if (event.keyCode === 13) {
-      checkWeather(searchBox.value);
+      checkWeather(searchBox.value.trim());
     }
   });
   
