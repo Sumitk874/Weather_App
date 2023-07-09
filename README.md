@@ -5,9 +5,8 @@ This is a weather website that allows users to check the weather for any city. I
 ## Features
 
 - User can enter the name of a city in the search bar to get the weather information.
-- The website displays the current weather conditions, including temperature, humidity, wind speed, and weather description.
-- The background image of the website dynamically changes based on the current weather conditions.
-- Users can switch between Celsius and Fahrenheit temperature units.
+- The website displays the current weather conditions, including temperature, humidity, wind speed.
+- The background image of the website dynamically changes based on the weather conditions.
 
 ## Installation
 
